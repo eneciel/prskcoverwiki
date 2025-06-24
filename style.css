@@ -1,0 +1,357 @@
+html, body {
+    --easy: #52B10E;
+    --normal: #0F80A9;
+    --hard: #CB8700;
+    --expert: #9E0E2B;
+    --master: #7E0DAA;
+
+    --miku: #39C5BB;
+    --rin: #FFA500;
+    --len: #FFE211;
+    --luka: #FFC0CB;
+    --meiko: #D80000;
+    --kaito: #3468CD;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+.miku {background-color: var(--miku);}
+.rin {background-color: var(--rin);}
+.len {background-color: var(--len);}
+.luka {background-color: var(--luka);}
+.meiko {background-color: var(--meiko);}
+.kaito {background-color: var(--kaito);}
+
+h1 {
+    display: inline;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 2em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+small {
+    color: #9e9e9e;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.strong > * {
+    color: var(--primary-lighter);
+}
+
+.weak > * {
+    color: #9e9e9e;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-darker);
+    text-decoration: underline;
+}
+
+main {
+    width: 1200px;
+    background-color: #242424;
+    border-radius: 16px;
+    padding: 48px;
+    margin: 60px auto;
+}
+
+.banner {
+    display: flex;
+    margin: 0 0 24px;
+}
+
+.songinfobox {
+    width: 588px;
+    border: var(--primary) 4px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.songinfobox:nth-child(2) {
+    margin-left: 4px;
+}
+
+.songinfobox p, .songinfobox h3, .songinfobox h4 {
+    text-align: center;
+}
+
+.songprofile {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    margin: auto 0;
+}
+
+.jacketimg {
+    width: 240px;
+    margin-bottom: 16px;
+}
+
+.songcredit {
+    width: 100%;
+    display: flex;
+}
+
+.songcredit > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.songcredit h4 {
+    flex: 1;
+    background-color: #00000040;
+    padding: 12px 0;
+}
+
+.songcredit p {
+    flex: 2;
+}
+
+.songinfobox .container {
+    width: 100%;
+}
+
+.songinfobox .container h4 {
+    flex: 1;
+    background-color: #00000040;
+    padding: 8px 0;
+}
+
+.songinfobox .container > div {
+    flex: 2;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.songinfobox .container > div > div {
+    margin-left: 8px;
+}
+
+.songinfobox .container > div > div:first-child {
+    margin-left: 0;
+}
+
+.songindicator {
+    width: 100%;
+    display: flex;
+}
+
+.songindicator > .container:nth-child(2) {
+    margin-left: 4px;
+}
+
+.songindicator > .container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songindicator img {
+    width: 100px;
+}
+
+.songindicator p {
+    padding: 4px 0;
+}
+
+
+/*보컬 버전 박스*/
+
+.vocals {
+    border: var(--primary) 1px solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+.vocals p {
+    flex: 1;
+    margin-bottom: 8px;
+}
+
+.vocals img {
+    width: 60px;
+}
+
+
+/*난이도 박스*/
+
+.levels {
+    width: 100%;
+}
+
+.levels > h4 {
+    background-color: #00000040;
+    padding: 8px 0;
+}
+
+.levels > div > div {
+    width: 20%;
+}
+
+.levels > div > div > h4 {
+    padding: 8px 0;
+}
+
+.levels > div > div > p {
+    padding: 4px 0;
+    background-color: #00000040;
+}
+
+.levels > div > div:first-child {
+    background-color: var(--easy);
+}
+
+.levels > div > div:nth-child(2) {
+    background-color: var(--normal);
+}
+
+.levels > div > div:nth-child(3) {
+    background-color: var(--hard);
+}
+
+.levels > div > div:nth-child(4) {
+    background-color: var(--expert);
+}
+
+.levels > div > div:nth-child(5) {
+    background-color: var(--master);
+}
+
+
+/*가사*/
+
+.lyrics {
+    width: 500px;
+    margin: 24px auto 80px;
+}
+
+.lyrics > .column {
+    width: 100%;
+    border-top: #242424 1px solid;
+}
+
+.lyrics > .column:first-child {
+    border-top: none;
+}
+
+.lyrics > .column p {
+    text-align: center;
+    background-color: #000000a1;
+    border-top: #242424 1px solid;
+    padding: 4px 0;
+    flex: 3;
+}
+
+.lyrics > .column p:first-child {
+    background: none;
+    border-top: none;
+}
+
+.column + .mix {
+    background-color: #424242;
+}
+
+.column + .all {
+    background-color: var(--primary);
+}
+
+.singer {
+    width: 100%;
+    background-color: #242424;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.singer > div {
+    flex: 1;
+    height: 3px;
+}
+
+
+/*커먼 스타일*/
+
+.icon {
+    display: flex;
+}
+
+.icon img {
+    width: 1.2em;
+    margin-right: 4px;
+}
+
+.row {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.mar16 > * {
+    margin-left: 16px;
+}
+
+.mar16 > *:first-child {
+    margin-left: 0;
+}
+
+.mar8 > * {
+    margin-left: 8px;
+}
+
+.mar8 > *:first-child {
+    margin-left: 0;
+}

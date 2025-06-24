@@ -1,0 +1,28 @@
+html {
+    --primary: #ff9900;
+    --primary-darker: #ff9900bb;
+    --primary-darkest: #ff990050;
+    --primary-lighter: #ffbe5d;
+    --tsukasa: #FFBB00;
+    --emu: #FF66BB;
+    --nene: #33DD99;
+    --rui: #BB88ED;
+}
+
+.tsukasa {background-color: var(--tsukasa);}
+.emu {background-color: var(--emu);}
+.nene {background-color: var(--nene);}
+.rui {background-color: var(--rui);}
+
+.theBestShow {background: linear-gradient(to right, var(--tsukasa), var(--rui));}
+.SunAndMermaid {background: linear-gradient(to right, var(--emu), var(--nene));}
+.FerrisWheel {background: linear-gradient(to right, var(--tsukasa), var(--emu));}
+.Trustworthy {background: linear-gradient(to right, var(--tsukasa), var(--nene));}
+.Ideas {background: linear-gradient(to right, var(--emu), var(--rui));}
+.AlchemistAndMermaid {background: linear-gradient(to right, var(--nene), var(--rui));}
+
+/*츠카사+버싱*/
+.tsukasa-miku {background: linear-gradient(var(--tsukasa), var(--miku));}
+
+/*에무+버싱*/
+.emu-miku {background: linear-gradient(var(--emu), var(--miku));}
