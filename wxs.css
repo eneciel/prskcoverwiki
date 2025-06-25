@@ -23,6 +23,32 @@ html {
 
 /*츠카사+버싱*/
 .tsukasa-miku {background: linear-gradient(var(--tsukasa), var(--miku));}
+.tsukasa-rin {background: linear-gradient(var(--tsukasa), var(--rin));}
+.tsukasa-len {background: linear-gradient(var(--tsukasa), var(--len));}
+.tsukasa-luka {background: linear-gradient(var(--tsukasa), var(--luka));}
+.tsukasa-meiko {background: linear-gradient(var(--tsukasa), var(--meiko));}
+.tsukasa-kaito {background: linear-gradient(var(--tsukasa), var(--kaito));}
 
 /*에무+버싱*/
 .emu-miku {background: linear-gradient(var(--emu), var(--miku));}
+.emu-rin {background: linear-gradient(var(--emu), var(--rin));}
+.emu-len {background: linear-gradient(var(--emu), var(--len));}
+.emu-luka {background: linear-gradient(var(--emu), var(--luka));}
+.emu-meiko {background: linear-gradient(var(--emu), var(--meiko));}
+.emu-kaito {background: linear-gradient(var(--emu), var(--kaito));}
+
+/*네네+버싱*/
+.nene-miku {background: linear-gradient(var(--nene), var(--miku));}
+.nene-rin {background: linear-gradient(var(--nene), var(--rin));}
+.nene-len {background: linear-gradient(var(--nene), var(--len));}
+.nene-luka {background: linear-gradient(var(--nene), var(--luka));}
+.nene-meiko {background: linear-gradient(var(--nene), var(--meiko));}
+.nene-kaito {background: linear-gradient(var(--nene), var(--kaito));}
+
+/*루이+버싱*/
+.rui-miku {background: linear-gradient(var(--rui), var(--miku));}
+.rui-rin {background: linear-gradient(var(--rui), var(--rin));}
+.rui-len {background: linear-gradient(var(--rui), var(--len));}
+.rui-luka {background: linear-gradient(var(--rui), var(--luka));}
+.rui-meiko {background: linear-gradient(var(--rui), var(--meiko));}
+.rui-kaito {background: linear-gradient(var(--rui), var(--kaito));}
