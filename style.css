@@ -5,12 +5,17 @@ html, body {
     --expert: #9E0E2B;
     --master: #7E0DAA;
 
-    --miku: #39C5BB;
-    --rin: #FFA500;
-    --len: #FFE211;
-    --luka: #FFC0CB;
-    --meiko: #D80000;
-    --kaito: #3468CD;
+    --vs: #2ED7E1;
+    --miku: #39C5BB; --miku-dark: #39C5BBa1;
+    --rin: #FFA500; --rin-dark: #FFA500a1;
+    --len: #FFE211; --len-dark: #FFE211a1;
+    --luka: #FFC0CB; --luka-dark: #FFC0CBa1;
+    --meiko: #D80000; --meiko-dark: #D80000a1;
+    --kaito: #3468CD; --kaito-dark: #3468CDa1;
+
+    --vflower: #5A4081;
+    --una: #4646BB;
+
     color: white;
     background-color: black;
     margin: 0;
@@ -22,6 +27,13 @@ html, body {
 .luka {background-color: var(--luka);}
 .meiko {background-color: var(--meiko);}
 .kaito {background-color: var(--kaito);}
+
+.vocaloid {height: 48px; display: flex; align-items: center;} .vocaloid p {text-align: center; border-radius: 4px; padding: 2px 12px; margin: 0;}
+.vocaloid .miku {background-color: var(--miku-dark);}
+.vocaloid .len {background-color: var(--len-dark);}
+.vocaloid .kaito {background-color: var(--kaito-dark);}
+.vflower {background-color: var(--vflower);}
+.una {background-color: var(--una);}
 
 h1 {
     display: inline;
@@ -90,9 +102,69 @@ main {
     width: 1200px;
     background-color: #242424;
     border-radius: 16px;
+    box-sizing: border-box;
     padding: 48px;
     margin: 60px auto;
 }
+
+header {
+    width: 1200px;
+    height: 240px;
+    margin: 60px auto 0;
+}
+
+header > .row {
+    align-items: center;
+}
+
+header > .row > img {
+    height: 3em;
+    margin-right: 16px;
+}
+
+
+/*악곡 목록 테이블*/
+
+table {border-collapse: collapse;}
+
+tr {height: 172px; border-top: var(--primary-darker) 1px solid;} tr:first-child {height: auto; border: none;} tr:first-child th {padding: 8px 0;}
+
+th {background-color: var(--primary); border-color: var(--primary); padding: 0; margin: 0;}
+
+td {border-left: 1px solid; border-color: var(--primary-lighter); padding: 0;}
+
+tr > *:first-child {
+    width: 160px;
+    border: none;
+}
+
+tr > * > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td:first-child div {display: flex; align-items: center; flex-direction: column;}
+td:first-child img {width: 120px;}
+
+th:nth-child(2), td:nth-child(2) {width: 404px;}
+td:nth-child(2) > div {flex-direction: column;}
+td:nth-child(2) img {width: 48px;}
+td:nth-child(2) > div > div:nth-child(2) > div:first-child {border-color: white;}
+
+th:nth-child(3), td:nth-child(3) {width: 200px;}
+td:nth-child(3) > div {flex-direction: column;}
+
+th:nth-child(4), td:nth-child(4) {width: 340px;}
+td:nth-child(4) > div > div {width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; border-radius: 999px;}
+td:nth-child(4) .easy {background-color: var(--easy);}
+td:nth-child(4) .normal {background-color: var(--normal);}
+td:nth-child(4) .hard {background-color: var(--hard);}
+td:nth-child(4) .expert {background-color: var(--expert);}
+td:nth-child(4) .master {background-color: var(--master);}
+td:nth-child(4) .append {background: linear-gradient(to right, #B791FF, #FD7CE3);}
+
 
 .banner {
     display: flex;
@@ -100,7 +172,7 @@ main {
 }
 
 .songinfobox {
-    width: 588px;
+    width: 540px;
     border: var(--primary) 4px solid;
     display: flex;
     flex-direction: column;
@@ -168,10 +240,6 @@ main {
     justify-content: center;
 }
 
-.songinfobox .container > div > div {
-    margin-left: 8px;
-}
-
 .songinfobox .container > div > div:first-child {
     margin-left: 0;
 }
@@ -209,16 +277,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8px 24px;
+    padding: 8px 16px;
 }
 
-.vocals p {
-    flex: 1;
-    margin-bottom: 8px;
+.vocals > p {
+    margin-bottom: 4px;
+}
+
+.vocals > div {
+    height: 48px;
 }
 
 .vocals img {
-    width: 60px;
+    width: 48px;
 }
 
 
@@ -355,3 +426,15 @@ main {
 .mar8 > *:first-child {
     margin-left: 0;
 }
+
+.mar8v > * {
+    margin-top: 8px;
+}
+
+.mar8v > *:first-child {
+    margin-top: 0;
+}
+
+.pad8 {padding: 8px;}
+.pad8v {padding: 8px 0;}
+.pad8w {padding: 0 8px;}
