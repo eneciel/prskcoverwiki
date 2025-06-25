@@ -13,9 +13,6 @@ html, body {
     --meiko: #D80000; --meiko-dark: #D80000a1;
     --kaito: #3468CD; --kaito-dark: #3468CDa1;
 
-    --vflower: #5A4081;
-    --una: #4646BB;
-
     color: white;
     background-color: black;
     margin: 0;
@@ -32,8 +29,12 @@ html, body {
 .vocaloid .miku {background-color: var(--miku-dark);}
 .vocaloid .len {background-color: var(--len-dark);}
 .vocaloid .kaito {background-color: var(--kaito-dark);}
-.vflower {background-color: var(--vflower);}
-.una {background-color: var(--una);}
+.gumi {background-color: #39a02b;}
+.vflower {background-color: #5A4081;}
+.teto {background-color: #df5978;}
+.yuki {background-color: #DD4444;}
+.una {background-color: #4646BB;}
+.ia {background-color: #6C0F57;}
 
 h1 {
     display: inline;
@@ -131,10 +132,10 @@ tr {height: 172px; border-top: var(--primary-darker) 1px solid;} tr:first-child 
 
 th {background-color: var(--primary); border-color: var(--primary); padding: 0; margin: 0;}
 
-td {border-left: 1px solid; border-color: var(--primary-lighter); padding: 0;}
+td {border-left: 1px solid; border-color: var(--primary-darker); padding: 0;}
 
 tr > *:first-child {
-    width: 160px;
+    width: 200px;
     border: none;
 }
 
@@ -148,15 +149,15 @@ tr > * > div {
 td:first-child div {display: flex; align-items: center; flex-direction: column;}
 td:first-child img {width: 120px;}
 
-th:nth-child(2), td:nth-child(2) {width: 404px;}
+th:nth-child(2), td:nth-child(2) {width: 424px;}
 td:nth-child(2) > div {flex-direction: column;}
 td:nth-child(2) img {width: 48px;}
 td:nth-child(2) > div > div:nth-child(2) > div:first-child {border-color: white;}
 
-th:nth-child(3), td:nth-child(3) {width: 200px;}
+th:nth-child(3), td:nth-child(3) {width: 180px;}
 td:nth-child(3) > div {flex-direction: column;}
 
-th:nth-child(4), td:nth-child(4) {width: 340px;}
+th:nth-child(4), td:nth-child(4) {width: 300px;}
 td:nth-child(4) > div > div {width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; border-radius: 999px;}
 td:nth-child(4) .easy {background-color: var(--easy);}
 td:nth-child(4) .normal {background-color: var(--normal);}
@@ -164,6 +165,21 @@ td:nth-child(4) .hard {background-color: var(--hard);}
 td:nth-child(4) .expert {background-color: var(--expert);}
 td:nth-child(4) .master {background-color: var(--master);}
 td:nth-child(4) .append {background: linear-gradient(to right, #B791FF, #FD7CE3);}
+
+table .all {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary);
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table .toomanyanother img {
+    width: 36px;
+    height: 36px;
+}
 
 
 .banner {
@@ -253,7 +269,7 @@ td:nth-child(4) .append {background: linear-gradient(to right, #B791FF, #FD7CE3)
     margin-left: 4px;
 }
 
-.songindicator > .container > div {
+.indicatedbox {
     display: flex;
     flex-direction: column;
     align-items: center;
