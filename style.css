@@ -363,6 +363,7 @@ table .toomanyanother img {
 
 .lyrics > .column {
     width: 100%;
+    background-color: #242424;
     border-top: #242424 1px solid;
 }
 
